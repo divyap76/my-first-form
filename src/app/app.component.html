@@ -1,0 +1,32 @@
+<form [formGroup]="createNewProfile">
+<div>
+<h1>{{heading}}</h1>
+</div>
+<div>
+  <div>
+    <div>
+      <label> User Name </label>
+      <input type="text" formControlName="userName">
+      {{userName}}
+    </div>
+    <div>
+    <label> Email Id </label>
+    <input type="email" formControlName="emailId">
+    {{emailId}}
+    </div>
+    <div>
+      <label> Password </label>
+      <input type="password" formControlName="password">
+      {{password}}
+    </div>
+    <div>
+    <label> Conform Password </label>
+    <input type="password" formControlName="conformPassword">
+    {{conformPassword}}
+    </div>
+</div>
+<div>
+<button (click)="LOGIN()">SEND</button>
+</div>
+</div>
+</form>
